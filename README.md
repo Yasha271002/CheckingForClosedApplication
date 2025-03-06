@@ -81,8 +81,13 @@ json
 Пример сценария:
 У вас есть приложение 6.exe, которое иногда закрывается само по себе.
 
-Вы настраиваете appsettings.json с "ApplicationName": "C:\\Users\\User\\Desktop\\6.exe", "IsButton": true, "OnTimer": true, "TimerSecond": 3.
+Вы настраиваете appsettings.json с
 
+    "ApplicationName": "C:\\Users\\User\\Desktop\\6.exe", 
+    "IsButton": true, 
+    "OnTimer": true, 
+    "TimerSecond": 3.
+    
 Запускаете CheckingForClosedApplication.exe.
 6.exe открывается, и если оно закрывается, мониторинг перезапускает его.
 
@@ -91,6 +96,7 @@ json
 Настройка и кастомизация
 
 Путь к приложению: измените "ApplicationName" на нужный путь.
+
 Кнопка: настройте «X», «Y», «WidthButton», «HeightButton» для изменения положения и размера кнопки.
 Таймер: Включите "OnTimer" и задайте "TimerSecond" для управления поведением кнопки.
 Фон: Установите "IsThereBackground": true и укажите "BackgroundPath", чтобы добавить изображение в окно.
