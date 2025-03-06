@@ -43,6 +43,7 @@ CheckingForClosedApplication — это приложение на WPF (Windows P
 Пример файла appsettings.json:
 json
 {
+
     "ApplicationName": "C:\\Path\\To\\YourApp.exe", // Путь к приложению, которое нужно мониторить
     "ExplorerKill": false,                         // Убивать Проводник Windows (не используется в текущей версии)
     "IsThereBackground": false,                    // Включить фоновое изображение окна
