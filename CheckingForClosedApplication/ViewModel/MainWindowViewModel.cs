@@ -62,6 +62,10 @@ public partial class MainWindowViewModel : ObservableObject
         try
         {
             Settings = _jsonHelper.ReadJsonFromFile(_settingsPath, Settings);
+            if (Settings.ExplorerKill)
+            {
+                ExplorerHelper.KillExplorer();
+            }
             _logger.Information("Настройки загружены из {SettingsPath}, IsButton: {IsButton}", _settingsPath, Settings.IsButton);
         }
         catch (Exception ex)
